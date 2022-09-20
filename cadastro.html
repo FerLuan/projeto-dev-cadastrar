@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="cadastro.css">
+  <title>Cadastro</title>
+</head>
+<body>
+  <div class="titulo">
+    <img src="./imagens/dev.png" alt="logo Dev">
+    <h1 class="titulo-cadastrar">Cadastrar</h1>
+
+    <img class="lampada" src="./imagens/lampada.png" alt="Lâmpada ">
+  </div>
+
+  <div>
+
+    <form>
+      <fieldset class="grupo">
+        <legend>Crie sua Conta</legend>
+
+        <input type="text" 
+        name="seuNome" 
+        id="seuNome" 
+        placeholder="Seu nome" 
+        autocomplete="off" 
+        onfocus="seuNomeFocus()" 
+        onblur="seuNomeSemFocus()"
+        required> 
+        
+        <br><br>
+
+        <input type="text" 
+        name="seuEmail" 
+        id="seuEmail" 
+        placeholder="Seu email" 
+        autocomplete="off" 
+        onfocus="seuLoginFocus()" 
+        onblur="seuLoginSemFocus()"
+        required>
+        
+        <br><br>
+
+        <input type="password" 
+        name="suaSenha" 
+        id="suaSenha" 
+        placeholder="Sua senha" 
+        onfocus="suaSenhaFocus()" 
+        onblur="suaSenhaSemFocus()"
+        required> 
+        
+        <br><br>
+
+        <input type="password" 
+        name="confirmeSenha" 
+        id="confirmeSenha" 
+        placeholder="Confirme senha" 
+        onfocus="confirmeSenhaFocus()" 
+        onblur="confirmeSenhaSemFocus()"
+        required> 
+        
+        <br><br>
+
+        <input type="submit" value="Salvar" id="salvar">
+        <input type="reset" value="Refazer" id="refazer"> <br>
+      </fieldset>
+    </form>
+  </div>
+  
+  <script src="cadastro.js"></script>
+</body>
+</html>
